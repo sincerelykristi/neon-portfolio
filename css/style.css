@@ -2,20 +2,68 @@ body {
   width: 100%;
   margin: 0; }
 
+.menu-wrapper {
+  position: fixed;
+  padding: 20px;
+  z-index: 5;
+  margin: 3%;
+  border-radius: 50%;
+  background-color: #E5DDF0; }
+
+.menu-wrapper .hamburger-menu {
+  color: #723C8B; }
+
 header {
   width: 100%;
   height: 100vh;
+  z-index: 0;
+  top: 0;
   text-align: center;
   background: url(../images/headerbg-bw.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  header h1 {
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-    color: #E5DDF0; }
-  header h2 {
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-    color: #E5DDF0; }
+
+header .header-text {
+  margin-top: 0;
+  padding: 16%;
+  font-family: "Nunito", sans-serif;
+  color: #E5DDF0;
+  font-size: 3.5rem;
+  text-transform: uppercase; }
+
+header .header-text h1 {
+  margin: 0;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd; }
+
+header .header-text h2 {
+  margin: 0;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #FF69B4, 0 0 50px #FF69B4; }
+
+header .header-text h2 #web-blink {
+  -webkit-animation: blink 0.01s infinite alternate;
+  -moz-animation: blink 0.01s infinite alternate;
+  -o-animation: blink 0.01s infinite alternate;
+  animation: blink 0.01s infinite alternate; }
+
+header .down-arrow {
+  color: white;
+  position: absolute;
+  margin-bottom: 20px; }
+
+@-moz-keyframes blink {
+  70% {
+    opacity: 0.7; } }
+
+@-webkit-keyframes blink {
+  45% {
+    opacity: 0.5; } }
+
+@-o-keyframes blink {
+  70% {
+    opacity: 0.7; } }
+
+@keyframes blink {
+  70% {
+    opacity: 0.7; } }
