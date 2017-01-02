@@ -1,5 +1,6 @@
-body {
+body, html {
   width: 100%;
+  height: 100%;
   margin: 0; }
 
 .menu-wrapper {
@@ -12,6 +13,43 @@ body {
 
 .menu-wrapper .hamburger-menu {
   color: #723C8B; }
+
+.menu-wrapper .menu-close {
+  color: #723C8B; }
+
+.fullscreen-menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: #20032A;
+  padding: 5% 0;
+  text-align: center; }
+
+.fullscreen-menu h1 {
+  font-family: "Nunito", sans-serif;
+  color: #A07ABC;
+  font-size: 4rem;
+  margin: 0; }
+
+.fullscreen-menu ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 8% auto; }
+
+.fullscreen-menu ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  padding: 10px 0; }
+
+.fullscreen-menu ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E5DDF0; }
+
+.fullscreen-menu ul li a:hover {
+  color: #A07ABC;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd; }
 
 header {
   width: 100%;
@@ -77,30 +115,123 @@ header .down-arrow {
   width: 100%;
   min-height: 100vh;
   background-color: #A07ABC;
-  padding-top: 20px;
+  padding-top: 3%;
   overflow: auto;
   text-align: center; }
 
 .projects h1 {
   font-family: "Nunito", sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
   text-align: center;
-  color: #20032A;
-  margin: 0; }
+  text-transform: uppercase;
+  color: #A07ABC;
+  margin: 0;
+  text-shadow: 0 6px 10px #723C8B, 0px -1px 1px #E5DDF0; }
 
-.projects .project {
+.projects .project-wrapper {
+  margin: 3% auto;
+  width: 80%; }
+
+.projects .project-wrapper .project {
+  margin: 0 auto;
+  margin-bottom: 30px;
   display: inline-block;
   width: 50%;
   float: left; }
 
-.projects .project h3 {
-  font-family: "Nunito", sans-serif; }
+.projects .project-wrapper .project h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
-.projects .project .imagewrapper {
+.projects .project-wrapper .project .imagewrapper {
   margin: 0 auto;
   width: 50%;
-  height: 250px; }
+  height: 200px;
+  overflow: hidden; }
 
-.projects .project .imagewrapper img {
+.projects .project-wrapper .project .imagewrapper img {
   width: 100%;
   height: auto; }
+
+.projects .project-wrapper .project button {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #E5DDF0; }
+
+.projects .project-wrapper .project button a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none; }
+
+.projects .project-wrapper .project hr {
+  margin: 20px;
+  border: 1px solid #723C8B; }
+
+.aboutsection {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 3%;
+  background: url(../images/aboutbg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  bottom: 0; }
+
+.aboutsection h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 4.5rem;
+  color: #20032A;
+  margin: 0;
+  text-shadow: 0 6px 10px #723C8B, 0px -1px 1px #723C8B; }
+
+.aboutsection .aboutwrapper {
+  width: 80%;
+  background: rgba(229, 221, 240, 0.5);
+  margin: 3% auto;
+  overflow: auto; }
+
+.aboutsection .aboutwrapper .kristiphoto {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 50%;
+  background: url(../images/kristiprofile.jpg);
+  background-size: cover;
+  margin: 7.5% 5%;
+  float: left; }
+
+.aboutsection .aboutwrapper .kristiphoto:hover {
+  background: url(../images/kristiclown.jpg);
+  background-size: cover; }
+
+.aboutsection .aboutwrapper p {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 10% auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem; }
+
+.aboutsection .aboutwrapper .buttonwrapper {
+  margin: 10% auto;
+  width: 30%;
+  display: inline-block; }
+
+.aboutsection .aboutwrapper button {
+  display: inline-block;
+  background: #A07ABC;
+  width: 80%;
+  margin: 15px 0;
+  height: 40px;
+  border: none;
+  border-radius: 10px; }
+
+.aboutsection .aboutwrapper button a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem; }

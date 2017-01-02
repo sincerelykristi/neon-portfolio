@@ -6,8 +6,9 @@ $purple: #723C8B;
 $lightlavender: #A07ABC;
 $whitelavender: #E5DDF0;
 
-body {
+body, html {
   width: 100%;
+  height: 100%;
   margin: 0;
 }
 .menu-wrapper {
@@ -19,6 +20,44 @@ body {
   background-color: $whitelavender;
   .hamburger-menu {
     color: $purple;
+  }
+  .menu-close {
+    color: $purple;
+  }
+}
+
+.fullscreen-menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: $darkpurple;
+  padding: 5% 0;
+  text-align: center;
+  h1 {
+    font-family: $header-font;
+    color: $lightlavender;
+    font-size: 4rem;
+    margin: 0;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 8% auto;
+    li {
+      font-family: $text;
+      font-size: 3rem;
+      padding: 10px 0;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $whitelavender;
+      }
+      a:hover {
+        color: $lightlavender;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
+      }
+    }
   }
 }
 
@@ -95,30 +134,124 @@ header {
   width: 100%;
   min-height: 100vh;
   background-color: $lightlavender;
-  padding-top: 20px;
+  padding-top: 3%;
   overflow: auto;
   text-align: center;
   h1 {
     font-family: $header-font;
-    font-size: 3rem;
+    font-size: 4.5rem;
     text-align: center;
+    text-transform: uppercase;
+    color: $lightlavender;
+    margin: 0;
+    text-shadow: 0 6px 10px $purple, 0px -1px 1px $whitelavender;
+  }
+  .project-wrapper {
+    margin: 3% auto;
+    width: 80%;
+    .project {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      display: inline-block;
+      width: 50%;
+      float: left;
+      h3 {
+        font-family: $header-font;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      .imagewrapper {
+        margin: 0 auto;
+        width: 50%;
+        height: 200px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      button {
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: $whitelavender;
+        a {
+          font-family: $text;
+          font-size: 1rem;
+          text-decoration: none;
+        }
+      }
+      hr {
+          margin: 20px;
+          border: 1px solid $purple;
+        }
+    }
+  }
+}
+
+.aboutsection {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 3%;
+  background: url(../images/aboutbg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  bottom: 0;
+  h1 {
+    font-family: $header-font;
+    font-size: 4.5rem;
     color: $darkpurple;
     margin: 0;
+    text-shadow: 0 6px 10px $purple, 0px -1px 1px $purple;
   }
-  .project {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    h3 {
-      font-family: $header-font;
+  .aboutwrapper {
+    width: 80%;
+    background: rgba(229, 221, 240, .5);
+    margin: 3% auto;
+    overflow: auto;
+    .kristiphoto {
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      border-radius: 50%;
+      background: url(../images/kristiprofile.jpg);
+      background-size: cover;
+      margin: 7.5% 5%;
+      float: left;
     }
-    .imagewrapper {
-      margin: 0 auto;
-      width: 50%;
-      height: 250px;
-      img {
-        width: 100%;
-        height: auto;
+    .kristiphoto:hover {
+      background: url(../images/kristiclown.jpg);
+      background-size: cover;
+    }
+    p {
+      width: 30%;
+      display: inline-block;
+      float: left;
+      margin: 10% auto;
+      font-family: $text;
+      font-size: 1rem;
+    }
+    .buttonwrapper {
+      margin: 10% auto;
+      width: 30%;
+      display: inline-block;
+    }
+    button {
+      display: inline-block;
+      background: $lightlavender;
+      width: 80%;
+      margin: 15px 0;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      a {
+        text-decoration: none;
+        font-family: $text;
+        font-size: 1rem;
       }
     }
   }
