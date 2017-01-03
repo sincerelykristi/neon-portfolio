@@ -9,9 +9,9 @@ $(document).ready(function() {
     $("#menubutton").toggleClass("fa-bars hamburger-menu" || "fa-times menu-close");
   });
 
-$("#menulink").click(function(){
+$(".menulink").click(function(){
   $(".fullscreen-menu").toggle();
-  $(".menubutton").toggleClass("fa-bars hamburger-menu" || "fa-times menu-close");
+  $("#menubutton").attr("class", "fa fa-bars fa-2x hamburger-menu fa fa-times fa-2x menu-close");
 })
 
 

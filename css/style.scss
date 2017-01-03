@@ -28,8 +28,12 @@ body, html {
 
 .fullscreen-menu {
   display: none;
+  z-index: 4;
+  position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  top: 0;
+  left: 0;
   background: $darkpurple;
   padding: 5% 0;
   text-align: center;
@@ -67,7 +71,7 @@ header {
   height: 100vh;
   position: relative;
   z-index: 0;
-  top: 0;
+  // top: 0;
   text-align: center;
   background: url(../images/headerbg-bw.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -139,7 +143,7 @@ header {
   text-align: center;
   h1 {
     font-family: $header-font;
-    font-size: 4.5rem;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     color: $lightlavender;
@@ -162,12 +166,10 @@ header {
       }
       .imagewrapper {
         margin: 0 auto;
-        width: 50%;
-        height: 200px;
-        overflow: hidden;
+        width: 70%;
+        height: 300px;
         img {
           width: 100%;
-          height: auto;
         }
       }
       button {
@@ -210,7 +212,7 @@ header {
   }
   .aboutwrapper {
     width: 80%;
-    background: rgba(229, 221, 240, .5);
+    background: rgba(229, 221, 240, .8);
     margin: 3% auto;
     overflow: auto;
     .kristiphoto {
@@ -233,7 +235,7 @@ header {
       float: left;
       margin: 10% auto;
       font-family: $text;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     .buttonwrapper {
       margin: 10% auto;
