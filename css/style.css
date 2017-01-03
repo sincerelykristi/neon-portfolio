@@ -211,7 +211,7 @@ header .down-arrow {
   background-size: cover; }
 
 .aboutsection .aboutwrapper p {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   float: left;
   margin: 10% auto;
@@ -219,20 +219,22 @@ header .down-arrow {
   font-size: 1.1rem; }
 
 .aboutsection .aboutwrapper .buttonwrapper {
-  margin: 10% auto;
-  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 100%;
   display: inline-block; }
 
 .aboutsection .aboutwrapper button {
   display: inline-block;
   background: #A07ABC;
-  width: 80%;
-  margin: 15px 0;
+  width: 20%;
+  margin: 15px 5px;
   height: 40px;
   border: none;
   border-radius: 10px; }
 
 .aboutsection .aboutwrapper button a {
   text-decoration: none;
+  color: #723C8B;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem; }
